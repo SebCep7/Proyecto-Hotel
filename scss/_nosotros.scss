@@ -1,0 +1,201 @@
+// ---- NOSOTROS ----
+.nosotros-main{
+
+    width:min(1400px,92%);
+
+    margin:auto;
+
+    padding:70px 0 100px;
+
+}
+
+.nosotros{
+
+    text-align:center;
+
+    margin-bottom:90px;
+
+}
+
+.nosotros p{
+
+    max-width:900px;
+
+    margin:0 auto 25px;
+
+    color:var(--color-text);
+
+    line-height:1.9;
+
+    font-size:1.08rem;
+
+}
+
+
+// ---- MISIÓN Y VISIÓN ----
+.mision-vision{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(380px,1fr));
+
+    gap:35px;
+
+    margin-bottom:90px;
+
+}
+
+.mision-vision article{
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow-md);
+
+    transition:all .35s ease;
+
+}
+
+.mision-vision article:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.mision-vision h2{
+
+    margin-bottom:20px;
+
+    font-size:2.2rem;
+
+}
+
+.mision-vision p{
+
+    color:var(--color-text);
+
+    line-height:1.9;
+
+}
+
+
+// ---- VALORES ----
+.valores{
+
+    margin-bottom:90px;
+
+    text-align:center;
+
+}
+
+.valores h2{
+
+    margin-bottom:40px;
+
+    font-size:3rem;
+
+}
+
+.valores ul{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:22px;
+
+}
+
+.valores li{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:var(--shadow-sm);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    transition:.35s ease;
+
+    color:var(--color-text);
+
+    font-weight:600;
+
+}
+
+.valores li:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.valor-ico{
+
+    font-size:1.5rem;
+
+}
+
+
+// ---- ESTADÍSTICAS ----
+.estadisticas{
+
+    background:linear-gradient(135deg,
+    var(--color-primary),
+    #5A3200);
+
+    color:white;
+
+    border-radius:28px;
+
+    padding:70px 40px;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.dato{
+
+    padding:15px;
+
+}
+
+.dato h3{
+
+    color:var(--color-secondary);
+
+    font-size:3.4rem;
+
+    margin-bottom:12px;
+
+}
+
+.dato p{
+
+    color:white;
+
+    font-size:1.05rem;
+
+}
+

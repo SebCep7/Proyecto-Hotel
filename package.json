@@ -1,5 +1,21 @@
 {
+  "name": "loitel-hoteles",
+  "version": "1.0.0",
+  "description": "Sitio web de Loitel Hoteles",
+  "main": "index.js",
+  "scripts": {
+    "sass:build": "sass --load-path=node_modules --quiet-deps scss/main.scss styles/styles.css --style=expanded --source-map",
+    "sass:build:min": "sass --load-path=node_modules --quiet-deps scss/main.scss styles/styles.min.css --style=compressed --no-source-map",
+    "sass:watch": "sass --load-path=node_modules --quiet-deps --watch scss/main.scss:styles/styles.css --style=expanded --source-map"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.8"
-  }
+  },
+  "devDependencies": {
+    "sass": "^1.102.0"
+  },
+  "private": true
 }

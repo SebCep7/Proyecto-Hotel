@@ -1,0 +1,17 @@
+:root{
+
+    --color-primary:    #{$color-primary};
+    --color-secondary:  #{$color-secondary};
+    --color-background: #{$color-background};
+    --color-white:      #{$color-white};
+    --color-dark:       #{$color-dark};
+    --color-text:       #{$color-text};
+
+    --shadow-sm: #{$shadow-sm};
+    --shadow-md: #{$shadow-md};
+    --shadow-lg: #{$shadow-lg};
+
+    --radius:     #{$radius};
+    --transition: #{$transition};
+
+}

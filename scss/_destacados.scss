@@ -1,0 +1,74 @@
+// ---- DESTACADOS ----
+.destacados{
+
+    width:min(1400px,92%);
+
+    margin:120px auto 80px;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+}
+
+.destacado-card{
+
+    background:white;
+
+    border-radius:var(--radius);
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:all .35s ease;
+
+    transform-style:preserve-3d;
+
+}
+
+.destacado-card:hover{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.destacado-card img{
+
+    width:100%;
+
+    height:240px;
+
+    object-fit:cover;
+
+    transition:transform .5s ease;
+
+}
+
+.destacado-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.destacado-card h3{
+
+    font-size:2rem;
+
+    margin:25px 25px 10px;
+
+}
+
+.destacado-card p{
+
+    margin:0 25px 30px;
+
+    color:var(--color-text);
+
+    line-height:1.8;
+
+}
+

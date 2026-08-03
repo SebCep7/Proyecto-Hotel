@@ -1,0 +1,50 @@
+// ==================================================
+// DESIGN TOKENS DE LA MARCA
+// (se usan para themear Bootstrap y para generar las
+// custom properties CSS que ya usa el resto del sitio)
+// ==================================================
+
+$color-primary:    #734002;
+$color-secondary:  #BF926B;
+$color-background: #F8F4EF;
+$color-white:      #ffffff;
+$color-dark:       #333333;
+$color-text:       #5A5A5A;
+
+$shadow-sm: 0 5px 15px rgba(0, 0, 0, .08);
+$shadow-md: 0 10px 30px rgba(0, 0, 0, .12);
+$shadow-lg: 0 20px 45px rgba(0, 0, 0, .18);
+
+$radius:     20px;
+$transition: .35s ease;
+
+
+// ==================================================
+// OVERRIDES DE BOOTSTRAP
+// Estas variables se leen ANTES de importar
+// bootstrap/scss/variables, así que Bootstrap arma
+// sus botones, formularios, grilla, etc. con la
+// paleta e identidad de Loitel en vez de la suya.
+// ==================================================
+
+$primary:    $color-primary;
+$secondary:  $color-secondary;
+$light:      $color-background;
+$dark:       $color-dark;
+
+$body-bg:    $color-background;
+$body-color: $color-dark;
+
+$font-family-base:     Georgia, serif;
+$headings-font-family: "Cormorant Garamond", serif;
+$headings-font-weight: 600;
+$headings-color:       $color-primary;
+
+$border-radius:    .75rem;
+$border-radius-sm: .5rem;
+$border-radius-lg: 1.25rem;
+
+$link-color:       $color-primary;
+$link-hover-color: $color-secondary;
+
+$enable-shadows: false;

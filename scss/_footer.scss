@@ -1,0 +1,179 @@
+// ---- FOOTER ----
+footer{
+
+    background:var(--color-primary);
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px 40px;
+
+    margin-top:80px;
+
+}
+
+footer h2{
+
+    font-size:1rem;
+
+    font-weight:400;
+
+    color:#F5F5F5;
+
+    margin-bottom:10px;
+
+}
+
+footer nav{
+
+    margin-top:25px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+footer ul{
+
+    list-style:none;
+
+}
+
+footer a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    transition:.35s ease;
+
+}
+
+footer a:hover{
+
+    background:var(--color-secondary);
+
+    transform:translateY(-6px);
+
+}
+
+footer img{
+
+    width:24px;
+
+}
+
+
+// ---- WHATSAPP ----
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    background:#25D366;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:var(--shadow-lg);
+
+    z-index:999;
+
+    transition:.35s ease;
+
+}
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+
+}
+
+.whatsapp-float img{
+
+    width:38px;
+
+}
+
+
+// ---- BOTÓN VOLVER ARRIBA ----
+.back-top{
+
+    position:fixed;
+
+    right:110px;
+
+    bottom:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--color-primary);
+
+    color:white;
+
+    font-size:1.5rem;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.35s ease;
+
+    box-shadow:var(--shadow-md);
+
+    z-index:998;
+
+}
+
+.back-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.back-top:hover{
+
+    background:var(--color-secondary);
+
+    transform:translateY(-5px);
+
+}
+

@@ -1,0 +1,70 @@
+// ==================================================
+// LOITEL HOTELES — main.scss
+// Punto de entrada de Sass.
+//
+// Compilar con:
+//   npm run sass:build   (una vez)
+//   npm run sass:watch   (recompila al guardar)
+// ==================================================
+
+
+// --------------------------------------------------
+// 1) Funciones de Bootstrap (necesarias antes que nada)
+// --------------------------------------------------
+@import "bootstrap/scss/functions";
+
+// --------------------------------------------------
+// 2) Nuestros tokens de marca + overrides de variables
+//    de Bootstrap (deben ir ANTES de bootstrap/variables)
+// --------------------------------------------------
+@import "variables";
+
+// --------------------------------------------------
+// 3) Núcleo de variables/mixins de Bootstrap
+// --------------------------------------------------
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// --------------------------------------------------
+// 4) Piezas de Bootstrap que realmente usamos
+//    (a propósito no importamos el framework entero
+//    para no arrastrar componentes que no necesitamos)
+// --------------------------------------------------
+@import "bootstrap/scss/root";        // sus custom properties (se combinan con las nuestras)
+@import "bootstrap/scss/reboot";      // reset moderno
+@import "bootstrap/scss/type";
+@import "bootstrap/scss/containers";  // .container, .container-fluid
+@import "bootstrap/scss/grid";        // .row, .col-*
+@import "bootstrap/scss/buttons";     // .btn, .btn-primary, etc.
+@import "bootstrap/scss/forms";       // .form-control, .form-select, etc.
+@import "bootstrap/scss/transitions";
+
+@import "bootstrap/scss/utilities/api"; // genera las utility classes (d-flex, mt-3, etc.)
+
+// --------------------------------------------------
+// 5) Nuestras custom properties (:root) generadas a
+//    partir de los mismos tokens de marca
+// --------------------------------------------------
+@import "root";
+
+// --------------------------------------------------
+// 6) Estilos propios del sitio (van después de Bootstrap
+//    a propósito: en caso de choque de selectores con la
+//    misma especificidad, los nuestros ganan por venir
+//    último en la cascada)
+// --------------------------------------------------
+@import "base";
+@import "header";
+@import "hero";
+@import "reserva";
+@import "destacados";
+@import "contacto";
+@import "galeria";
+@import "nosotros";
+@import "servicios";
+@import "footer";
+@import "widgets";
+@import "responsive";
