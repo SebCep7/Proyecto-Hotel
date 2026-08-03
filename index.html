@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Loitel Hoteles: elegancia y confort en el corazón de Buenos Aires. Habitaciones premium, desayuno buffet y spa. Reservá tu estadía hoy.">
+    <link rel="icon" href="./assets/img/logo2.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+    <title>Loitel Hoteles | Inicio</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <header>
+        <nav class="nav" id="nav">
+            <ul class="menu menu-izq">
+                <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./pages/galeria.html">Galería</a></li>
+            </ul>
+            <a href="./index.html" class="logo-link">
+                <img src="./assets/img/logo2.png" alt="Logo Loitel Hoteles" class="logo">
+            </a>
+            <ul class="menu menu-der">
+                <li><a href="./pages/servicios.html">Servicios</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>
+            <button type="button" class="hamburger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="bienvenida">
+            <h1>Bienvenidos a Loitel</h1>
+            <p>Descubrí el equilibrio perfecto entre elegancia y confort en el corazón de Buenos Aires. Cada detalle de
+                nuestra estadía está pensado para que te sientas en casa.</p>
+            <p>Dejate llevar por la hospitalidad única de Loitel y viví momentos que perduran.</p>
+            <button type="button">
+                <a href="./pages/contacto.html">Reservá ahora</a>
+            </button>
+        </section>
+
+        <form class="reserva-bar" aria-label="Buscar disponibilidad de habitaciones">
+            <div class="campo">
+                <label for="checkin">Check-In</label>
+                <input type="date" id="checkin" name="checkin">
+            </div>
+            <div class="campo">
+                <label for="checkout">Check-Out</label>
+                <input type="date" id="checkout" name="checkout">
+            </div>
+            <div class="campo">
+                <label for="adultos">Adultos</label>
+                <select id="adultos" name="adultos">
+                    <option>1</option>
+                    <option selected>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label for="ninos">Niños</label>
+                <select id="ninos" name="ninos">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+            </div>
+            <button class="btn-reserva" type="submit">
+                Ver disponibilidad
+            </button>
+        </form>
+
+        <section class="destacados">
+            <article class="destacado-card">
+                <img src="./assets/img/habitacion.jpeg" alt="Habitación premium de Loitel Hoteles" loading="lazy">
+                <h3>Habitaciones Premium</h3>
+                <p>Amplias y modernas, equipadas con todo lo que necesitás para descansar.</p>
+            </article>
+            <article class="destacado-card">
+                <img src="./assets/img/desayuno.jpeg" alt="Mesa con desayuno buffet de Loitel Hoteles" loading="lazy">
+                <h3>Desayuno Buffet</h3>
+                <p>Empezá el día con una amplia variedad de opciones frescas y de calidad.</p>
+            </article>
+            <article class="destacado-card">
+                <img src="./assets/img/spa.jpeg" alt="Área de spa y bienestar de Loitel Hoteles" loading="lazy">
+                <h3>Spa & Bienestar</h3>
+                <p>Espacios diseñados para el descanso y la relajación total.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Creado por Sebastian Loitegui</h2>
+        <h2 class="footer-year">© 2026 Loitel Hoteles - Todos los derechos reservados.</h2>
+
+        <nav aria-label="Redes sociales">
+            <ul>
+                <li><a href="https://www.instagram.com" aria-label="Instagram de Loitel Hoteles" target="_blank" rel="noopener"><img
+                            src="./assets/img/logos/instagram.png" alt=""></a></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.facebook.com" aria-label="Facebook de Loitel Hoteles" target="_blank" rel="noopener"><img
+                            src="./assets/img/logos/facebook.png" alt=""></a></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.youtube.com" aria-label="YouTube de Loitel Hoteles" target="_blank" rel="noopener"><img
+                            src="./assets/img/logos/youtube.png" alt=""></a></li>
+            </ul>
+            <ul>
+                <li><a href="https://www.linkedin.com" aria-label="LinkedIn de Loitel Hoteles" target="_blank" rel="noopener"><img
+                            src="./assets/img/logos/linkedin.png" alt=""></a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <a href="https://wa.me/5491123456789" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+        <img src="./assets/img/logos/whatsapp.png" alt="">
+    </a>
+
+    <script src="./scripts/main.js"></script>
+</body>
+
+</html>
