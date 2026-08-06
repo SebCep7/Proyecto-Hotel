@@ -12,10 +12,6 @@ const header = $("header");
 
 /*======================================================
     INICIALIZACIÓN
-    (antes estas llamadas estaban comentadas y las
-    funciones ni siquiera existían: la barra de progreso,
-    el resaltado del link activo y el efecto de scroll del
-    header nunca se ejecutaban aunque el CSS ya los soportaba)
 ======================================================*/
 document.addEventListener("DOMContentLoaded", () => {
 
