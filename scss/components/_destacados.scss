@@ -1,81 +1,45 @@
-// ---- GALERÍA ----
-.galeria-main{
-
+// ---- DESTACADOS ----
+.destacados{
     width:min(1400px,92%);
-
-    margin:auto;
-
-    padding:70px 0 100px;
-
-}
-
-.galeria{
-
+    margin:120px auto 80px;
     display:grid;
-
     grid-template-columns:
-
-    repeat(auto-fit,minmax(330px,1fr));
-
+    repeat(auto-fit,minmax(320px,1fr));
     gap:35px;
-
 }
 
-.galeria article{
-
+.destacado-card{
     background:white;
-
     border-radius:var(--radius);
-
     overflow:hidden;
-
     box-shadow:var(--shadow-sm);
-
     transition:all .35s ease;
-
     transform-style:preserve-3d;
-
 }
 
-.galeria article:hover{
-
+.destacado-card:hover{
     box-shadow:var(--shadow-lg);
-
 }
 
-.galeria article img{
-
+.destacado-card img{
     width:100%;
-
-    height:260px;
-
+    height:240px;
     object-fit:cover;
-
-    transition:transform .45s ease;
-
+    transition:transform .5s ease;
 }
 
-.galeria article:hover img{
-
+.destacado-card:hover img{
     transform:scale(1.08);
-
 }
 
-.galeria article h2{
-
+.destacado-card h3{
     font-size:2rem;
-
-    margin:24px 24px 10px;
-
+    margin:25px 25px 10px;
 }
 
-.galeria article p{
-
-    margin:0 24px 28px;
-
+.destacado-card p{
+    margin:0 25px 30px;
     color:var(--color-text);
-
     line-height:1.8;
-
 }
 

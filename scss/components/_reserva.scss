@@ -1,106 +1,62 @@
 // ---- BARRA DE RESERVAS ----
 .reserva-bar{
-
     position: relative;
-
     width: min(1200px, 92%);
-
     margin: -80px auto 100px;
-
     background: var(--color-white);
-
     border-radius: 24px;
-
     display: grid;
-
     grid-template-columns: repeat(4, 1fr) 240px;
-
     overflow: hidden;
-
     box-shadow: var(--shadow-lg);
-
     z-index: 20;
-
 }
 
 .campo{
-
     padding: 28px;
-
     border-right: 1px solid #ECECEC;
-
 }
 
 .campo:last-child{
-
     border-right: none;
-
 }
 
 .campo label{
-
     display: block;
-
     margin-bottom: 10px;
-
     font-size: .82rem;
-
     font-weight: 700;
-
     letter-spacing: 1px;
-
     color: var(--color-primary);
-
     text-transform: uppercase;
-
 }
 
 .campo input,
 .campo select{
-
     width: 100%;
-
     border: none;
-
     outline: none;
-
     background: transparent;
-
     font-size: 1rem;
-
     color: var(--color-dark);
-
 }
 
 .btn-reserva{
-
     border: none;
-
     background: var(--color-primary);
-
     color: white;
-
     font-size: 1.05rem;
-
     font-weight: 700;
-
     cursor: pointer;
-
     transition: .35s;
-
 }
 
 .btn-reserva:hover{
-
     background: var(--color-secondary);
-
 }
 
 .btn-reserva:disabled{
-
     opacity:.7;
-
     cursor:not-allowed;
-
 }
 

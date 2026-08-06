@@ -1,8 +1,4 @@
-// ==================================================
-// DESIGN TOKENS DE LA MARCA
-// (se usan para themear Bootstrap y para generar las
-// custom properties CSS que ya usa el resto del sitio)
-// ==================================================
+
 
 $color-primary:    #734002;
 $color-secondary:  #BF926B;
@@ -18,14 +14,6 @@ $shadow-lg: 0 20px 45px rgba(0, 0, 0, .18);
 $radius:     20px;
 $transition: .35s ease;
 
-
-// ==================================================
-// OVERRIDES DE BOOTSTRAP
-// Estas variables se leen ANTES de importar
-// bootstrap/scss/variables, así que Bootstrap arma
-// sus botones, formularios, grilla, etc. con la
-// paleta e identidad de Loitel en vez de la suya.
-// ==================================================
 
 $primary:    $color-primary;
 $secondary:  $color-secondary;

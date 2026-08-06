@@ -40,14 +40,10 @@ function createProgressBar() {
     const updateProgress = () => {
 
         const scrollTop = window.scrollY;
-
         const docHeight =
             document.documentElement.scrollHeight - window.innerHeight;
-
         const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
-
         bar.style.width = progress + "%";
-
     };
 
     window.addEventListener("scroll", updateProgress, { passive: true });
@@ -70,10 +66,8 @@ function setActiveMenu() {
         const linkFile = link.getAttribute("href").split("/").pop();
 
         if (linkFile === currentFile) {
-
             link.classList.add("active");
             link.setAttribute("aria-current", "page");
-
         }
 
     });
@@ -91,17 +85,11 @@ function initNavbar() {
     }
 
     const toggleHeaderScroll = () => {
-
         if (window.scrollY > 40) {
-
             header.classList.add("header-scroll");
-
         } else {
-
             header.classList.remove("header-scroll");
-
         }
-
     };
 
     window.addEventListener("scroll", toggleHeaderScroll, { passive: true });
@@ -283,18 +271,12 @@ if (hero && !prefersReducedMotion) {
 ==================================================*/
 
 const counters = document.querySelectorAll(".dato h3");
-
 const counterObserver = new IntersectionObserver(entries => {
-
     entries.forEach(entry => {
-
         if (entry.isIntersecting) {
-
             animateCounter(entry.target);
             counterObserver.unobserve(entry.target);
-
         }
-
     });
 
 }, {
@@ -311,7 +293,6 @@ counters.forEach(counter => {
 function animateCounter(element) {
 
     const original = element.textContent.trim();
-
     if (original.includes("/")) {
         return;
     }
@@ -497,7 +478,6 @@ if (form) {
         }, 1600);
 
     });
-
 }
 
 
@@ -531,29 +511,18 @@ rippleButtons.forEach(button => {
         if (prefersReducedMotion) {
             return;
         }
-
         const circle = document.createElement("span");
-
         circle.className = "ripple";
-
         const size = Math.max(this.clientWidth, this.clientHeight);
-
         circle.style.width = size + "px";
         circle.style.height = size + "px";
-
         circle.style.left = (e.offsetX - size / 2) + "px";
         circle.style.top = (e.offsetY - size / 2) + "px";
-
         this.appendChild(circle);
-
         setTimeout(() => {
-
             circle.remove();
-
         }, 650);
-
     });
-
 });
 
 
@@ -566,29 +535,19 @@ function showToast(message) {
     let toast = document.querySelector(".toast");
 
     if (!toast) {
-
         toast = document.createElement("div");
-
         toast.className = "toast";
         toast.setAttribute("role", "status");
         toast.setAttribute("aria-live", "polite");
-
         document.body.appendChild(toast);
 
     }
-
     toast.textContent = message;
-
     toast.classList.add("show");
-
     clearTimeout(showToast.timer);
-
     showToast.timer = setTimeout(() => {
-
         toast.classList.remove("show");
-
     }, 2600);
-
 }
 
 
@@ -609,26 +568,17 @@ document.body.appendChild(backTop);
 window.addEventListener("scroll", () => {
 
     if (window.scrollY > 500) {
-
         backTop.classList.add("show");
-
     } else {
-
         backTop.classList.remove("show");
-
     }
-
 }, { passive: true });
 
 backTop.addEventListener("click", () => {
-
     window.scrollTo({
-
         top: 0,
         behavior: prefersReducedMotion ? "auto" : "smooth"
-
     });
-
 });
 
 
@@ -637,13 +587,9 @@ backTop.addEventListener("click", () => {
 ==================================================*/
 
 document.querySelectorAll("img").forEach(img => {
-
     if (!img.hasAttribute("loading")) {
-
         img.loading = "lazy";
-
     }
-
 });
 
 
@@ -656,35 +602,23 @@ const cards = document.querySelectorAll(
 );
 
 if (!prefersReducedMotion) {
-
     cards.forEach(card => {
-
         card.addEventListener("mousemove", e => {
-
             const rect = card.getBoundingClientRect();
-
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-
             const rotateY = ((x / rect.width) - 0.5) * 10;
             const rotateX = ((y / rect.height) - 0.5) * -10;
-
             card.style.transform =
                 `perspective(900px)
-                 rotateX(${rotateX}deg)
-                 rotateY(${rotateY}deg)
-                 translateY(-8px)`;
-
+                rotateX(${rotateX}deg)
+                rotateY(${rotateY}deg)
+                translateY(-8px)`;
         });
-
         card.addEventListener("mouseleave", () => {
-
             card.style.transform = "";
-
         });
-
     });
-
 }
 
 
@@ -693,27 +627,18 @@ if (!prefersReducedMotion) {
 ==================================================*/
 
 const logo = document.querySelector(".logo");
-
 if (logo && !prefersReducedMotion) {
-
     logo.addEventListener("mouseenter", () => {
-
         logo.animate([
-
             { transform: "rotate(0deg) scale(1)" },
             { transform: "rotate(-4deg) scale(1.08)" },
             { transform: "rotate(4deg) scale(1.08)" },
             { transform: "rotate(0deg) scale(1)" }
-
         ], {
-
             duration: 450,
             easing: "ease-out"
-
         });
-
     });
-
 }
 
 
@@ -724,10 +649,8 @@ if (logo && !prefersReducedMotion) {
 const footerYear = document.querySelector("footer .footer-year");
 
 if (footerYear) {
-
     footerYear.textContent =
         `© ${new Date().getFullYear()} Loitel Hoteles - Todos los derechos reservados.`;
-
 }
 
 
@@ -736,7 +659,5 @@ if (footerYear) {
 ==================================================*/
 
 window.addEventListener("load", () => {
-
     document.body.classList.add("loaded");
-
 });
