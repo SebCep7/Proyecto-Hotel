@@ -495,9 +495,7 @@ input[type="reset"],
 
 rippleButtons.forEach(button => {
 
-    // Solo forzamos "relative" si el elemento no tiene ya su propio
-    // posicionamiento (fixed/absolute/sticky), para no romper el
-    // position:fixed del botón de WhatsApp ni el de "volver arriba".
+
     const currentPosition = getComputedStyle(button).position;
 
     if (currentPosition === "static") {
